@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>This will show a task</h1>
+<p>{{ selected_task.description }}</p>
+<p>{{ selected_task.duration }}</p>
+<p>{{ selected_task.user.first_name }} {{ selected_task.las_name }}</p>
+<p>{{ selected_task.completed }}</p>
+
+{% endblock %}
